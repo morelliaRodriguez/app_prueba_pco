@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../main.dart';
 
-class UrlShortenerApp extends ConsumerWidget {
-  const UrlShortenerApp({super.key});
+class UrlShortenerScreen extends ConsumerWidget {
+  const UrlShortenerScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -66,12 +66,12 @@ class UrlShortenerApp extends ConsumerWidget {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text("Advertencia"),
+          title: const Text("Advertencia"),
           content: Text(message),
           actions: [
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
-              child: Text("Aceptar"),
+              child: const Text("Aceptar"),
             ),
           ],
         );

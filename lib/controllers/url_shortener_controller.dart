@@ -5,7 +5,7 @@ import 'dart:convert';
 
 class UrlShortenerController extends ChangeNotifier {
   String _url = '';
-  List<ShortenedUrl> _shortUrls = [];
+  final List<ShortenedUrl> _shortUrls = [];
 
   List<ShortenedUrl> get shortUrls => _shortUrls;
   String get url => _url;

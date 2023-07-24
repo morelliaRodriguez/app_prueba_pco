@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: 'home',
       routes: {
-        'home': (context) => UrlShortenerApp(),
+        'home': (context) => const UrlShortenerScreen(),
       },
-      home: UrlShortenerApp(),
+      home: const UrlShortenerScreen(),
     );
   }
 }
