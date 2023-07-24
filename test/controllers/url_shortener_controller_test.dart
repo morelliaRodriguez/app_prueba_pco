@@ -18,8 +18,8 @@ void main() {
 
     test('shortenUrl should add ShortenedUrl to shortUrls list on success',
         () async {
-      final longUrl = "https://www.example.com";
-      final shortUrl = "https://cleanuri.com/qMWpGz";
+      const longUrl = "https://www.example.com";
+      const shortUrl = "https://cleanuri.com/qMWpGz";
 
       // Mock del resultado de la respuesta HTTP exitosa
       final mockResponse = http.Response('{"result_url": "$shortUrl"}', 200);
